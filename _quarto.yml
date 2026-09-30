@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "Tai's Epic Website"
+  title: "megatai007.github.io"
   navbar:
     left:
       - href: index.qmd
