@@ -1,5 +1,6 @@
 ---
 title: "Resources"
 format: html
+draft: true
 ---
 So Many RESOURCESSSS

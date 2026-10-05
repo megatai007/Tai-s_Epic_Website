@@ -8,6 +8,10 @@ about:
   image-width: 17em
 ---
 
+::: {.tagline}
+Data Analytics · Statistics · Applied Mathematics
+:::
+
 ## About me
 
 Hello! My name is Tai Fowler, and I am a class of 2026 Pomona College alumnus who majored in math. Throughout my time studying at Pomona, I completed complex data analytics projects. At the Carnegie Mellon Sports Analytics Camp, I worked alongside a senior MLB analyst to run clustering models on more than 300,000 entries of MLB bat tracking data. For my capstone thesis project, I used Gaussian mixture models to analyze 1,136 of Jose Altuve's swings and found evidence that he uses different swings depending on the game situation.

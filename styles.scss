@@ -1,0 +1,39 @@
+/*-- scss:defaults --*/
+
+// Pomona Blue (PMS 2945)
+$pomona-blue: #005499;
+
+$primary: $pomona-blue;
+$link-color: $pomona-blue;
+$navbar-bg: $pomona-blue;
+$footer-bg: $pomona-blue;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+$font-family-sans-serif: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+$headings-font-weight: 600;
+$line-height-base: 1.65;
+
+/*-- scss:rules --*/
+
+h2 {
+  color: $pomona-blue;
+}
+
+// Front page: tagline under the name and a readable, left-aligned bio
+.tagline {
+  text-align: center;
+  font-size: 1.1rem;
+  color: $gray-600;
+  margin: -0.5rem 0 2rem;
+  letter-spacing: 0.02em;
+}
+
+.quarto-about-jolla main.content {
+  max-width: 42rem;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.quarto-about-jolla main.content h2 {
+  text-align: left;
+}
