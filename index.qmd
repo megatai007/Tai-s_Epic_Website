@@ -1,11 +1,21 @@
 ---
-title: "Welcome!"
+title: "Tai Fowler"
+image: media/2026_fowler_tai.jpeg
+toc: false
+about:
+  template: jolla
+  image-shape: round
+  image-width: 17em
 ---
 
-This is a Quarto website.
+## About me
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+Hello! My name is Tai Fowler, and I am a class of 2026 Pomona College alumnus who majored in math. Throughout my time studying at Pomona, I completed complex data analytics projects. At the Carnegie Mellon Sports Analytics Camp, I worked alongside a senior MLB analyst to run clustering models on more than 300,000 entries of MLB bat tracking data. For my capstone thesis project, I used Gaussian mixture models to analyze 1,136 of Jose Altuve's swings and found evidence that he uses different swings depending on the game situation.
 
-```{r}
-1 + 1
-```
+I also served as a teaching assistant for Methods in Biostatistics, where I graded every assignment and gave feedback to 30 students. Helping others understand statistical methods sharpened my own understanding of them. I am highly experienced in R, using packages like tidyverse, ggplot2, and mclust for data wrangling, visualization, and statistical modeling, and I have introductory experience in SQL and Python.
+
+Additionally, I enjoyed engaging with the greater 5C community as a four-year starter and two-year co-captain of the 5C men's club basketball team, and as a Club Sports Event Manager, where I helped run events for 22 club sports programs.
+
+## What's next
+
+I'm excited to start my career in data analytics. I want to keep growing as a data analyst by working with new datasets, learning new tools, and turning data into insights that help teams make better decisions. If you're looking for someone who loves digging into data, feel free to [reach out](mailto:tai.c.fowler@gmail.com)!

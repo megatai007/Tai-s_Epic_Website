@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>About – Tai Fowler</title>
+<title>Senior Thesis – Tai Fowler</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -25,41 +25,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -135,11 +100,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./about.html" aria-current="page"> 
+    <a class="nav-link" href="./about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./thesis.html"> 
+    <a class="nav-link active" href="./thesis.html" aria-current="page"> 
 <span class="menu-text">Thesis</span></a>
   </li>  
   <li class="nav-item">
@@ -176,20 +141,31 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#the-question" id="toc-the-question" class="nav-link active" data-scroll-target="#the-question">The question</a></li>
+  <li><a href="#the-method-gaussian-mixture-models" id="toc-the-method-gaussian-mixture-models" class="nav-link" data-scroll-target="#the-method-gaussian-mixture-models">The method: Gaussian mixture models</a></li>
+  <li><a href="#simulation-study-which-model-should-you-pick" id="toc-simulation-study-which-model-should-you-pick" class="nav-link" data-scroll-target="#simulation-study-which-model-should-you-pick">Simulation study: which model should you pick?</a></li>
+  <li><a href="#application-jose-altuves-swings" id="toc-application-jose-altuves-swings" class="nav-link" data-scroll-target="#application-jose-altuves-swings">Application: Jose Altuve’s swings</a></li>
+  <li><a href="#limitations-and-next-steps" id="toc-limitations-and-next-steps" class="nav-link" data-scroll-target="#limitations-and-next-steps">Limitations and next steps</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content column-page-left" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">About</h1>
+<h1 class="title">Senior Thesis</h1>
+<p class="subtitle lead">Exploration of the Gaussian Mixture Model and Its Application to Baseball Analytics</p>
 </div>
 
 
 
-<div class="quarto-title-meta column-page">
+<div class="quarto-title-meta column-page-left">
 
     
   
@@ -201,15 +177,66 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>About this site</p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
+<p><strong>Tai Fowler</strong> · Senior Thesis in Mathematics, Pomona College · Advisor: Dr.&nbsp;Johanna Hardin</p>
+<p><a href="media/final_tai_thesis_edits.pdf" class="btn btn-primary" target="_blank">Read the full thesis (PDF)</a></p>
+<section id="the-question" class="level2">
+<h2 class="anchored" data-anchor-id="the-question">The question</h2>
+<p>Do hitters have more than one swing?</p>
+<p>Players have long talked about changing their swing for the situation. The best-known example is the “two-strike approach,” where a hitter shortens up to avoid striking out. Bryce Harper put it this way: he has “more clubs in the bag.”</p>
+<p>Baseball Savant recently released five new bat tracking metrics: <strong>bat speed</strong>, <strong>swing length</strong>, <strong>attack angle</strong>, <strong>attack direction</strong>, and <strong>swing path tilt</strong>. For the first time, a swing can be described with numbers rather than words like “flat” or “long.” My thesis asks whether those numbers show statistical evidence that a batter has distinct swing types.</p>
+</section>
+<section id="the-method-gaussian-mixture-models" class="level2">
+<h2 class="anchored" data-anchor-id="the-method-gaussian-mixture-models">The method: Gaussian mixture models</h2>
+<p>If a hitter really has several swings, their swing data is a blend of several groups, but nobody labels which swing is which. A <strong>Gaussian mixture model</strong> treats the data as a mix of bell-shaped (Gaussian) groups and estimates what each group looks like and how often it appears. The <strong>Expectation–Maximization (EM) algorithm</strong> fits the model by alternating between guessing which group each swing belongs to and updating the groups to match.</p>
+<p>The groups can be shaped in different ways: their size, shape, and orientation can each be the same for every group or allowed to vary. That gives 14 possible covariance models, from the simplest (EEE, every group identical) to the most flexible (VVV, every group different).</p>
+</section>
+<section id="simulation-study-which-model-should-you-pick" class="level2">
+<h2 class="anchored" data-anchor-id="simulation-study-which-model-should-you-pick">Simulation study: which model should you pick?</h2>
+<p>In real data you don’t know the true shape of the groups, so I tested what happens when you pick the wrong model. I generated 3-D data sets of 900 points from several known structures (VEE, EVE, EEV, and a 6-group case) and clustered each one three ways:</p>
+<ul>
+<li>with the <strong>correct</strong> model, as a control</li>
+<li>with the simpler <strong>EEE</strong> model, which underfits</li>
+<li>with the more flexible <strong>VVV</strong> model, which overfits</li>
+</ul>
+<p>I repeated this 500 times per scenario and scored each result with the <strong>Adjusted Rand Index</strong> (ARI), where 1 means the true groups were recovered perfectly and 0 means no better than random.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Simulation results">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Simulation results
 </div>
 </div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Overfitting held up well.</strong> VVV produced ARI distributions close to the correct-model control. On EVE data, about 80% of VVV fits scored between 0.8 and 0.9.</li>
+<li><strong>Underfitting hurt.</strong> EEE scored much lower, with about 70% of fits between 0.35 and 0.45 on the same data.</li>
+<li><strong>Complexity has limits.</strong> With 6 groups, accuracy dropped for every model, including the correct one.</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="application-jose-altuves-swings" class="level2">
+<h2 class="anchored" data-anchor-id="application-jose-altuves-swings">Application: Jose Altuve’s swings</h2>
+<p>I applied a VVV model with three clusters to <strong>1,136 swings</strong> by Jose Altuve from the 2025 MLB season, using all five bat tracking metrics (normalized). I then compared the clusters across game situations.</p>
+<ul>
+<li><strong>One cluster looks like his “A” swing.</strong> It had the highest squared-up rate. It appeared most often with fewer than two strikes, against fastballs, and on pitches in the middle of the zone.</li>
+<li><strong>Another looks like a defensive “B” swing.</strong> Its squared-up rate was 8% lower, though its contact rate was 16% higher. It appeared most often with two strikes, against off-speed and breaking pitches, and on pitches low and away.</li>
+</ul>
+<p>For Altuve at least, the data supports the idea that he uses more than one swing and that his choice responds to the game situation.</p>
+</section>
+<section id="limitations-and-next-steps" class="level2">
+<h2 class="anchored" data-anchor-id="limitations-and-next-steps">Limitations and next steps</h2>
+<ul>
+<li>I chose three clusters for interpretability. A formal criterion such as BIC should decide the number of swing types.</li>
+<li>The analysis covers one player. Repeating it across the league could show whether there are common swing archetypes.</li>
+<li>Bat tracking data only spans a short period, so more seasons would strengthen the results.</li>
+</ul>
+<p><em>All analysis was done in R, mainly with <code>mclust</code>, <code>tidyverse</code>, and <code>ggplot2</code>.</em></p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
