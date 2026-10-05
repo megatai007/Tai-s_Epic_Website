@@ -8,8 +8,6 @@ website:
     right:
       - href: index.qmd
         text: Home
-      - text: About
-        href: about.qmd        
       - text: Thesis
         href: thesis.qmd
       - text: CV
@@ -18,7 +16,7 @@ website:
         href: resources.qmd
       - icon: linkedin
         text: LinkedIn
-        href: www.linkedin.com/in/tai-fowler
+        href: https://www.linkedin.com/in/tai-fowler
         target: _blank
       - icon: github
         text: GitHub

@@ -7,13 +7,6 @@
     "text": "So Many RESOURCESSSS"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Tai Fowler",
-    "section": "",
-    "text": "Hello! My name is Tai Fowler, and I am a class of 2026 Pomona College alumnus who majored in math. Throughout my time studying at Pomona, I completed complex data analytics projects. At the Carnegie Mellon Sports Analytics Camp, I worked alongside a senior MLB analyst to run clustering models on more than 300,000 entries of MLB bat tracking data. For my capstone thesis project, I used Gaussian mixture models to analyze 1,136 of Jose Altuve’s swings and found evidence that he uses different swings depending on the game situation.\nI also served as a teaching assistant for Methods in Biostatistics, where I graded every assignment and gave feedback to 30 students. Helping others understand statistical methods sharpened my own understanding of them. I am highly experienced in R, using packages like tidyverse, ggplot2, and mclust for data wrangling, visualization, and statistical modeling, and I have introductory experience in SQL and Python.\nAdditionally, I enjoyed engaging with the greater 5C community as a four-year starter and two-year co-captain of the 5C men’s club basketball team, and as a Club Sports Event Manager, where I helped run events for 22 club sports programs."
-  },
-  {
     "objectID": "thesis.html",
     "href": "thesis.html",
     "title": "Senior Thesis",
@@ -56,11 +49,11 @@
     "text": "Limitations and next steps\n\nI chose three clusters for interpretability. A formal criterion such as BIC should decide the number of swing types.\nThe analysis covers one player. Repeating it across the league could show whether there are common swing archetypes.\nBat tracking data only spans a short period, so more seasons would strengthen the results.\n\nAll analysis was done in R, mainly with mclust, tidyverse, and ggplot2."
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Tai Fowler",
     "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
+    "text": "Hello! My name is Tai Fowler, and I am a class of 2026 Pomona College alumnus who majored in math. Throughout my time studying at Pomona, I completed complex data analytics projects. At the Carnegie Mellon Sports Analytics Camp, I worked alongside a senior MLB analyst to run clustering models on more than 300,000 entries of MLB bat tracking data. For my capstone thesis project, I used Gaussian mixture models to analyze 1,136 of Jose Altuve’s swings and found evidence that he uses different swings depending on the game situation.\nI also served as a teaching assistant for Methods in Biostatistics, where I graded every assignment and gave feedback to 30 students. Helping others understand statistical methods sharpened my own understanding of them. I am highly experienced in R, using packages like tidyverse, ggplot2, and mclust for data wrangling, visualization, and statistical modeling, and I have introductory experience in SQL and Python.\nAdditionally, I enjoyed engaging with the greater 5C community as a four-year starter and two-year co-captain of the 5C men’s club basketball team, and as a Club Sports Event Manager, where I helped run events for 22 club sports programs."
   },
   {
     "objectID": "index.html#about-me",
