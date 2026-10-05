@@ -1,0 +1,79 @@
+[
+  {
+    "objectID": "resources.html",
+    "href": "resources.html",
+    "title": "Resources",
+    "section": "",
+    "text": "So Many RESOURCESSSS"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Tai Fowler",
+    "section": "",
+    "text": "Hello! My name is Tai Fowler, and I am a class of 2026 Pomona College alumnus who majored in math. Throughout my time studying at Pomona, I completed complex data analytics projects. At the Carnegie Mellon Sports Analytics Camp, I worked alongside a senior MLB analyst to run clustering models on more than 300,000 entries of MLB bat tracking data. For my capstone thesis project, I used Gaussian mixture models to analyze 1,136 of Jose Altuve’s swings and found evidence that he uses different swings depending on the game situation.\nI also served as a teaching assistant for Methods in Biostatistics, where I graded every assignment and gave feedback to 30 students. Helping others understand statistical methods sharpened my own understanding of them. I am highly experienced in R, using packages like tidyverse, ggplot2, and mclust for data wrangling, visualization, and statistical modeling, and I have introductory experience in SQL and Python.\nAdditionally, I enjoyed engaging with the greater 5C community as a four-year starter and two-year co-captain of the 5C men’s club basketball team, and as a Club Sports Event Manager, where I helped run events for 22 club sports programs."
+  },
+  {
+    "objectID": "thesis.html",
+    "href": "thesis.html",
+    "title": "Senior Thesis",
+    "section": "",
+    "text": "Tai Fowler · Senior Thesis in Mathematics, Pomona College · Advisor: Dr. Johanna Hardin\nRead the full thesis (PDF)"
+  },
+  {
+    "objectID": "thesis.html#the-question",
+    "href": "thesis.html#the-question",
+    "title": "Senior Thesis",
+    "section": "The question",
+    "text": "The question\nDo hitters have more than one swing?\nPlayers have long talked about changing their swing for the situation. The best-known example is the “two-strike approach,” where a hitter shortens up to avoid striking out. Bryce Harper put it this way: he has “more clubs in the bag.”\nBaseball Savant recently released five new bat tracking metrics: bat speed, swing length, attack angle, attack direction, and swing path tilt. For the first time, a swing can be described with numbers rather than words like “flat” or “long.” My thesis asks whether those numbers show statistical evidence that a batter has distinct swing types."
+  },
+  {
+    "objectID": "thesis.html#the-method-gaussian-mixture-models",
+    "href": "thesis.html#the-method-gaussian-mixture-models",
+    "title": "Senior Thesis",
+    "section": "The method: Gaussian mixture models",
+    "text": "The method: Gaussian mixture models\nIf a hitter really has several swings, their swing data is a blend of several groups, but nobody labels which swing is which. A Gaussian mixture model treats the data as a mix of bell-shaped (Gaussian) groups and estimates what each group looks like and how often it appears. The Expectation–Maximization (EM) algorithm fits the model by alternating between guessing which group each swing belongs to and updating the groups to match.\nThe groups can be shaped in different ways: their size, shape, and orientation can each be the same for every group or allowed to vary. That gives 14 possible covariance models, from the simplest (EEE, every group identical) to the most flexible (VVV, every group different)."
+  },
+  {
+    "objectID": "thesis.html#simulation-study-which-model-should-you-pick",
+    "href": "thesis.html#simulation-study-which-model-should-you-pick",
+    "title": "Senior Thesis",
+    "section": "Simulation study: which model should you pick?",
+    "text": "Simulation study: which model should you pick?\nIn real data you don’t know the true shape of the groups, so I tested what happens when you pick the wrong model. I generated 3-D data sets of 900 points from several known structures (VEE, EVE, EEV, and a 6-group case) and clustered each one three ways:\n\nwith the correct model, as a control\nwith the simpler EEE model, which underfits\nwith the more flexible VVV model, which overfits\n\nI repeated this 500 times per scenario and scored each result with the Adjusted Rand Index (ARI), where 1 means the true groups were recovered perfectly and 0 means no better than random.\n\n\n\n\n\n\nNoteSimulation results\n\n\n\n\nOverfitting held up well. VVV produced ARI distributions close to the correct-model control. On EVE data, about 80% of VVV fits scored between 0.8 and 0.9.\nUnderfitting hurt. EEE scored much lower, with about 70% of fits between 0.35 and 0.45 on the same data.\nComplexity has limits. With 6 groups, accuracy dropped for every model, including the correct one."
+  },
+  {
+    "objectID": "thesis.html#application-jose-altuves-swings",
+    "href": "thesis.html#application-jose-altuves-swings",
+    "title": "Senior Thesis",
+    "section": "Application: Jose Altuve’s swings",
+    "text": "Application: Jose Altuve’s swings\nI applied a VVV model with three clusters to 1,136 swings by Jose Altuve from the 2025 MLB season, using all five bat tracking metrics (normalized). I then compared the clusters across game situations.\n\nOne cluster looks like his “A” swing. It had the highest squared-up rate. It appeared most often with fewer than two strikes, against fastballs, and on pitches in the middle of the zone.\nAnother looks like a defensive “B” swing. Its squared-up rate was 8% lower, though its contact rate was 16% higher. It appeared most often with two strikes, against off-speed and breaking pitches, and on pitches low and away.\n\nFor Altuve at least, the data supports the idea that he uses more than one swing and that his choice responds to the game situation."
+  },
+  {
+    "objectID": "thesis.html#limitations-and-next-steps",
+    "href": "thesis.html#limitations-and-next-steps",
+    "title": "Senior Thesis",
+    "section": "Limitations and next steps",
+    "text": "Limitations and next steps\n\nI chose three clusters for interpretability. A formal criterion such as BIC should decide the number of swing types.\nThe analysis covers one player. Repeating it across the league could show whether there are common swing archetypes.\nBat tracking data only spans a short period, so more seasons would strengthen the results.\n\nAll analysis was done in R, mainly with mclust, tidyverse, and ggplot2."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "index.html#about-me",
+    "href": "index.html#about-me",
+    "title": "Tai Fowler",
+    "section": "",
+    "text": "Hello! My name is Tai Fowler, and I am a class of 2026 Pomona College alumnus who majored in math. Throughout my time studying at Pomona, I completed complex data analytics projects. At the Carnegie Mellon Sports Analytics Camp, I worked alongside a senior MLB analyst to run clustering models on more than 300,000 entries of MLB bat tracking data. For my capstone thesis project, I used Gaussian mixture models to analyze 1,136 of Jose Altuve’s swings and found evidence that he uses different swings depending on the game situation.\nI also served as a teaching assistant for Methods in Biostatistics, where I graded every assignment and gave feedback to 30 students. Helping others understand statistical methods sharpened my own understanding of them. I am highly experienced in R, using packages like tidyverse, ggplot2, and mclust for data wrangling, visualization, and statistical modeling, and I have introductory experience in SQL and Python.\nAdditionally, I enjoyed engaging with the greater 5C community as a four-year starter and two-year co-captain of the 5C men’s club basketball team, and as a Club Sports Event Manager, where I helped run events for 22 club sports programs."
+  },
+  {
+    "objectID": "index.html#whats-next",
+    "href": "index.html#whats-next",
+    "title": "Tai Fowler",
+    "section": "What’s next",
+    "text": "What’s next\nI’m excited to start my career in data analytics. I want to keep growing as a data analyst by working with new datasets, learning new tools, and turning data into insights that help teams make better decisions. If you’re looking for someone who loves digging into data, feel free to reach out!"
+  }
+]

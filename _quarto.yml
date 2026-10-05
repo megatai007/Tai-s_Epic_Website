@@ -3,20 +3,39 @@ project:
   output-dir: docs
 
 website:
-  title: "Tai's Epic Website"
+  title: "Tai Fowler"
   navbar:
-    left:
+    right:
       - href: index.qmd
         text: Home
-      - about.qmd
-
+      - text: About
+        href: about.qmd        
+      - text: Thesis
+        href: thesis.qmd
+      - text: CV
+        href: media/master_resume.pdf
+      - text: Resources
+        href: resources.qmd
+      - icon: linkedin
+        text: LinkedIn
+        href: www.linkedin.com/in/tai-fowler
+        target: _blank
+      - icon: github
+        text: GitHub
+        href: https://github.com/megatai007
+        target: _blank 
+      - icon: envelope
+        text: Email
+        href: mailto:tai.c.fowler@gmail.com
+  page-footer:
+      background: dark 
+      left: Copyright 2026, Tai Fowler
 format:
   html:
-    theme:
-      - cosmo
-      - brand
+    theme: styles.csss
     css: styles.css
     toc: true
+    page-layout: full
 
 
 
