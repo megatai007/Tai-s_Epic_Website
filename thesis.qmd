@@ -5,7 +5,7 @@ subtitle: "Exploration of the Gaussian Mixture Model and Its Application to Base
 
 **Tai Fowler** · Senior Thesis in Mathematics, Pomona College · Advisor: Dr. Johanna Hardin
 
-[Read the full thesis (PDF)](media/final_tai_thesis_edits.pdf){.btn .btn-primary target="_blank"}
+[Read the full thesis (PDF)](media/tai_fowler_thesis.pdf){.btn .btn-primary target="_blank"}
 
 ## The question
 
