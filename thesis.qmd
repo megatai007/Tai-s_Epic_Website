@@ -54,17 +54,33 @@ I repeated this 500 times per scenario and scored each result with the **Adjuste
   correct one.
 :::
 
+::: {#fig-sim layout-ncol=1}
+
+![Correct model (EVE)](media/sim_eve_correct.png){#fig-sim-correct fig-alt="Histogram of ARI scores for EVE data clustered with the correct EVE model. Most of the 500 data sets score between 0.8 and 0.9, with a small group below 0.6."}
+
+![Underfit model (EEE)](media/sim_eve_underfit_eee.png){#fig-sim-eee fig-alt="Histogram of ARI scores for EVE data clustered with the simpler EEE model. Most data sets score between 0.35 and 0.45."}
+
+![Overfit model (VVV)](media/sim_eve_overfit_vvv.png){#fig-sim-vvv fig-alt="Histogram of ARI scores for EVE data clustered with the flexible VVV model. Most data sets score between 0.8 and 0.9, with a small group near 0.4."}
+
+ARI scores for 500 simulated EVE data sets under each clustering model. The flexible VVV model
+recovers the groups almost as well as the correct model, while the simpler EEE model mostly
+scores around 0.4. The horizontal axes differ slightly between panels.
+:::
+
 ## Application: Jose Altuve's swings
 
 I applied a VVV model with three clusters to **1,136 swings** by Jose Altuve from the 2025 MLB
 season, using all five bat tracking metrics (normalized). I then compared the clusters across game
 situations.
 
-- **One cluster looks like his "A" swing.** It had the highest squared-up rate. It appeared most
-  often with fewer than two strikes, against fastballs, and on pitches in the middle of the zone.
-- **Another looks like a defensive "B" swing.** Its squared-up rate was 8% lower, though its
-  contact rate was 16% higher. It appeared most often with two strikes, against off-speed and
-  breaking pitches, and on pitches low and away.
+- **One cluster looks like his "A" swing.** It squared up the ball 30% of the time and made
+  contact 85% of the time. It appeared most often with fewer than two strikes, against fastballs,
+  and on pitches in the middle of the zone.
+- **Another looks like a less comfortable "B" swing.** It squared up the ball only 22% of the time
+  and made contact 69% of the time. It appeared most often with two strikes, against off-speed
+  and breaking pitches, and on pitches low and away.
+
+![Share of Altuve's swings in each cluster, with fewer than two strikes and with two strikes. Cluster 3 is the "A" swing and cluster 1 is the "B" swing. With two strikes, the "B" swing takes over.](media/altuve_two_strike_clusters.png){#fig-altuve fig-alt="Mosaic chart of Jose Altuve's swings split by count. With fewer than two strikes, cluster 3 (30% squared up, 85% contact) makes up most swings; with two strikes, cluster 1 (22% squared up, 69% contact) makes up most swings."}
 
 For Altuve at least, the data supports the idea that he uses more than one swing and that his
 choice responds to the game situation.

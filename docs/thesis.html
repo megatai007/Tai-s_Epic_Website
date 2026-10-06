@@ -208,14 +208,75 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 </div>
 </div>
+<div id="fig-sim" class="quarto-layout-panel">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-sim-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-sim" style="flex-basis: 100.0%;justify-content: flex-start;">
+<div id="fig-sim-correct" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Histogram of ARI scores for EVE data clustered with the correct EVE model. Most of the 500 data sets score between 0.8 and 0.9, with a small group below 0.6.">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-sim-correct-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="media/sim_eve_correct.png" class="img-fluid figure-img" data-ref-parent="fig-sim" alt="Histogram of ARI scores for EVE data clustered with the correct EVE model. Most of the 500 data sets score between 0.8 and 0.9, with a small group below 0.6.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-sim-correct-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(a) Correct model (EVE)
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-sim" style="flex-basis: 100.0%;justify-content: flex-start;">
+<div id="fig-sim-eee" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Histogram of ARI scores for EVE data clustered with the simpler EEE model. Most data sets score between 0.35 and 0.45.">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-sim-eee-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="media/sim_eve_underfit_eee.png" class="img-fluid figure-img" data-ref-parent="fig-sim" alt="Histogram of ARI scores for EVE data clustered with the simpler EEE model. Most data sets score between 0.35 and 0.45.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-sim-eee-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(b) Underfit model (EEE)
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-sim" style="flex-basis: 100.0%;justify-content: flex-start;">
+<div id="fig-sim-vvv" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Histogram of ARI scores for EVE data clustered with the flexible VVV model. Most data sets score between 0.8 and 0.9, with a small group near 0.4.">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-sim-vvv-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="media/sim_eve_overfit_vvv.png" class="img-fluid figure-img" data-ref-parent="fig-sim" alt="Histogram of ARI scores for EVE data clustered with the flexible VVV model. Most data sets score between 0.8 and 0.9, with a small group near 0.4.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-sim-vvv-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(c) Overfit model (VVV)
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-sim-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: ARI scores for 500 simulated EVE data sets under each clustering model. The flexible VVV model recovers the groups almost as well as the correct model, while the simpler EEE model mostly scores around 0.4. The horizontal axes differ slightly between panels.
+</figcaption>
+</figure>
+</div>
 </section>
 <section id="application-jose-altuves-swings" class="level2">
 <h2 class="anchored" data-anchor-id="application-jose-altuves-swings">Application: Jose Altuve’s swings</h2>
 <p>I applied a VVV model with three clusters to <strong>1,136 swings</strong> by Jose Altuve from the 2025 MLB season, using all five bat tracking metrics (normalized). I then compared the clusters across game situations.</p>
 <ul>
-<li><strong>One cluster looks like his “A” swing.</strong> It had the highest squared-up rate. It appeared most often with fewer than two strikes, against fastballs, and on pitches in the middle of the zone.</li>
-<li><strong>Another looks like a defensive “B” swing.</strong> Its squared-up rate was 8% lower, though its contact rate was 16% higher. It appeared most often with two strikes, against off-speed and breaking pitches, and on pitches low and away.</li>
+<li><strong>One cluster looks like his “A” swing.</strong> It squared up the ball 30% of the time and made contact 85% of the time. It appeared most often with fewer than two strikes, against fastballs, and on pitches in the middle of the zone.</li>
+<li><strong>Another looks like a less comfortable “B” swing.</strong> It squared up the ball only 22% of the time and made contact 69% of the time. It appeared most often with two strikes, against off-speed and breaking pitches, and on pitches low and away.</li>
 </ul>
+<div id="fig-altuve" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Mosaic chart of Jose Altuve's swings split by count. With fewer than two strikes, cluster 3 (30% squared up, 85% contact) makes up most swings; with two strikes, cluster 1 (22% squared up, 69% contact) makes up most swings.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-altuve-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="media/altuve_two_strike_clusters.png" class="img-fluid figure-img" alt="Mosaic chart of Jose Altuve's swings split by count. With fewer than two strikes, cluster 3 (30% squared up, 85% contact) makes up most swings; with two strikes, cluster 1 (22% squared up, 69% contact) makes up most swings.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-altuve-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Share of Altuve’s swings in each cluster, with fewer than two strikes and with two strikes. Cluster 3 is the “A” swing and cluster 1 is the “B” swing. With two strikes, the “B” swing takes over.
+</figcaption>
+</figure>
+</div>
 <p>For Altuve at least, the data supports the idea that he uses more than one swing and that his choice responds to the game situation.</p>
 </section>
 <section id="limitations-and-next-steps" class="level2">
